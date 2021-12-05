@@ -1,0 +1,7 @@
+# This is an example of how your configuration should look.
+# After modifying this file, save it as config.yaml
+
+smartetailing:
+  un: 'username'
+  pw: 'password'
+  domain: 'examplewebsite.com'
