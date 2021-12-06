@@ -340,10 +340,10 @@ def update_shipping_cost(driver,domain):
                 time.sleep(0.5)
                 driver.find_element_by_name('SHIPCHARGE').send_keys(Keys.TAB)
                 time.sleep(0.5)
-                driver.find_element_by_name('SHIPCHARGE').send_keys(Keys.ENTER)
+                driver.find_element_by_xpath('//*[@class="seatitle_shipcharge"]/div/div/a/i').click()
                 time.sleep(1)
                 wait.until(ec.element_to_be_clickable((By.NAME,('Submit'))))
-                # driver.find_element_by_name('Submit').click()
+                driver.find_element_by_name('Submit').click()
                 time.sleep(5)
             except:
                 errors += 1
